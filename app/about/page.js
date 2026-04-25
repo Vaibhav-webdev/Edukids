@@ -6,6 +6,10 @@ import {
   ArrowRight, Target, Eye, Heart, Star, Award,
   Users, BookOpen, Lightbulb, Shield,
 } from 'lucide-react';
+import {
+  Bird, ShieldCheck, School2, Plane, Rocket, Sparkles,
+} from 'lucide-react';
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -13,6 +17,15 @@ const fadeUp = {
 };
 
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.12 } } };
+
+const floaters = [
+  { icon: Rocket, top: '18%', left: '5%', delay: 0, size: 'text-2xl' },
+  { icon: Star, top: '25%', right: '8%', delay: 0.5, size: 'text-xl' },
+  { icon: Plane, top: '60%', right: '60%', delay: 1, size: 'text-3xl' },
+  { icon: Sparkles, bottom: '5%', left: '8%', delay: 0.8, size: 'text-2xl' },
+  { icon: School2, top: '80%', right: '12%', delay: 0.3, size: 'text-2xl' },
+  { icon: Bird, top: '14%', right: '34%', delay: 0.3, size: 'text-2xl' },
+];
 
 const values = [
   { icon: Heart, title: 'Compassion', desc: 'We care deeply for every child\'s emotional well-being and growth.', color: 'text-red-500', bg: 'bg-red-50' },
@@ -40,9 +53,27 @@ const milestones = [
 
 export default function AboutPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-10 relative">
       {/* ── Hero Banner ── */}
-      <section className="py-20 bg-hero-gradient relative overflow-hidden">
+      <section className="py-10 bg-[linear-gradient(135deg,#F0EEFF_0%,#FFF9E6_50%,#F0EEFF_100%)] relative overflow-hidden">
+      {floaters.map((f, i) => (
+              <motion.div
+                key={i}
+                className={`absolute ${f.size} select-none pointer-events-none animate-float`}
+                style={{
+                  top: f.top,
+                  bottom: f.bottom,
+                  left: f.left,
+                  right: f.right,
+                  animationDelay: `${f.delay}s`,
+                }}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 0.7, scale: 1 }}
+                transition={{ delay: 0.8 + f.delay * 0.2, duration: 0.5 }}
+              >
+                <f.icon size={35} color='#e8e8e8' />
+              </motion.div>
+            ))}
         <div className="absolute inset-0 bg-dots opacity-20 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div initial="hidden" animate="show" variants={stagger}>
@@ -90,7 +121,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Our Values ── */}
-      <section className="py-24 bg-section-gradient">
+      <section className="py-24 bg-[linear-gradient(180deg,#F8F9FE_0%,#FFFFFF_100%)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -155,7 +186,7 @@ export default function AboutPage() {
                   className={`flex items-center gap-8 ${i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
                 >
                   <div className={`flex-1 ${i % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                    <div className="card p-5 inline-block text-left max-w-xs">
+                    <div className="card p-5 px-10 inline-block text-left max-w-xs border">
                       <p className="text-primary font-extrabold font-heading text-lg mb-1">{m.year}</p>
                       <h4 className="font-heading font-bold text-gray-900 mb-1">{m.title}</h4>
                       <p className="text-sm text-gray-500">{m.desc}</p>
@@ -171,7 +202,7 @@ export default function AboutPage() {
       </section>
 
       {/* ── Team ── */}
-      <section className="py-24 bg-section-gradient">
+      <section className="py-24 bg-[linear-gradient(180deg,#F8F9FE_0%,#FFFFFF_100%)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -110,9 +110,9 @@ const programs = [
 
 export default function ProgramsPage() {
   return (
-    <div className="pt-20">
+    <div className="pt-10 bg-white">
       {/* ── Hero ── */}
-      <section className="py-20 bg-hero-gradient relative overflow-hidden">
+      <section className="py-10 bg-hero-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-dots opacity-20 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
@@ -130,7 +130,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* ── Program Cards ── */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
           {programs.map((p, i) => (
             <motion.div

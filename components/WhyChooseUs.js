@@ -64,18 +64,18 @@ export default function WhyChooseUs() {
 
             {/* Kid illustration */}
             <motion.div
-  whileHover={{ scale: 1.05, rotate: 2 }}
-  transition={{ type: 'spring', stiffness: 200 }}
-  className="relative z-10 pt-6 w-94 h-100 rounded-3xl shadow-2xl overflow-hidden"
->
-  <Image
-    src="/Img2.png"
-    alt="Kids-Girl"
-    fill
-    sizes="(max-width: 740px) 100vw, 500px"
-    className="object-cover"
-  />
-</motion.div>
+              whileHover={{ scale: 1.05, rotate: 2 }}
+              transition={{ type: 'spring', stiffness: 200 }}
+              className="relative z-10 w-94 h-100 shadow-2xl"
+            >
+              <Image
+                src="/Img2.png"
+                alt="Kids-Girl"
+                fill
+                sizes="(max-width: 740px) 100vw, 500px"
+                className="object-cover mt-4"
+              />
+            </motion.div>
 
             {/* Teacher badge */}
             <motion.div
@@ -86,11 +86,11 @@ export default function WhyChooseUs() {
               whileHover={{ scale: 1.08, y: -3 }}
               className="absolute bottom-8 right-4 bg-white rounded-2xl px-5 py-3.5 shadow-card-hover z-20"
             >
-              <p className="text-3xl font-extrabold font-heading text-primary leading-none">
+              <p className="text-4xl font-extrabold font-heading text-primary leading-none">
                 25+
               </p>
-              <p className="text-xs font-bold text-gray-700 mt-0.5">Experienced</p>
-              <p className="text-xs font-bold text-gray-700">Teachers</p>
+              <p className="text-sm font-bold text-gray-700 mt-0.5">Experienced</p>
+              <p className="text-sm font-bold text-gray-700">Teachers</p>
             </motion.div>
 
             {/* Star decoration */}

@@ -12,7 +12,7 @@ const decorStars = [
   { style: { bottom: '20%', right: '8%' }, size: 'text-xl', delay: 0.2 },
 ];
 
-const kidsEmoji = ['👦', '👧', '🧒', '👦🏾'];
+const kidsEmoji = ['/Img7.png', '/Img5.png', '/Img4.png', '/Img3.png'];
 
 export default function AdmissionsCTA() {
   return (
@@ -103,35 +103,9 @@ export default function AdmissionsCTA() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="flex items-end justify-center gap-3"
+            className=""
           >
-            {kidsEmoji.map((emoji, i) => (
-              <motion.div
-                key={i}
-                initial={{ y: 40, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 + i * 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                animate={{
-                  y: [0, i % 2 === 0 ? -8 : -14, 0],
-                }}
-                whileHover={{ scale: 1.15, y: -16 }}
-                className={`flex flex-col items-center ${
-                  i === 1 || i === 2 ? '-mt-8' : ''
-                }`}
-                style={{ animationDuration: `${3 + i * 0.5}s`, animationDelay: `${i * 0.3}s` }}
-              >
-                <div
-                  className={`relative rounded-3xl flex items-end justify-center shadow-lg overflow-hidden ${
-                    ['bg-green-100', 'bg-blue-100', 'bg-pink-100', 'bg-purple-100'][i]
-                  } ${i === 1 || i === 2 ? 'w-24 h-32' : 'w-20 h-28'}`}
-                >
-                 <span className="text-5xl pb-1 select-none">
-                  <Image src={"/Img2.png"} alt='Kids Image' objectFit='cover' width={300} height={300} />
-                 </span>
-                </div>
-              </motion.div>
-            ))}
+            <Image src={'/Img6.png'} alt={"Boys-Image"} className='w-60 h-60' width={500} height={400} />
           </motion.div>
         </div>
       </div>

@@ -22,7 +22,6 @@ const navLinks = [
     ],
   },
   { label: 'Admissions', href: '/admissions' },
-  { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 

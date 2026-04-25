@@ -35,9 +35,9 @@ const floaters = [
   { icon: Rocket, top: '8%', left: '5%', delay: 0, size: 'text-2xl' },
   { icon: Star, top: '15%', right: '8%', delay: 0.5, size: 'text-xl' },
   { icon: Plane, top: '50%', right: '60%', delay: 1, size: 'text-3xl' },
-  { icon: Sparkles, bottom: '25%', left: '8%', delay: 0.8, size: 'text-2xl' },
-  { icon: School2, top: '80%', right: '12%', delay: 0.3, size: 'text-2xl' },
-  { icon: Bird, top: '74%', right: '34%', delay: 0.3, size: 'text-2xl' },
+  { icon: Sparkles, bottom: '10%', left: '50%', delay: 0.8, size: 'text-2xl' },
+  { icon: School2, top: '80%', left: '2%', delay: 0.3, size: 'text-2xl' },
+  { icon: Bird, top: '10%', right: '34%', delay: 0.3, size: 'text-2xl' },
 ];
 
 /* ─── Kid Cards (visual placeholders) ─── */

@@ -45,7 +45,7 @@ export const GraduationCap = (props) => (
     <path d="M6 12v5c3 3 9 3 12 0v-5" />
   </svg>
 );
-const quickLinks = ['About Us', 'Programs', 'Admissions', 'Blog', 'Contact'];
+const quickLinks = ['About Us', 'Programs', 'Admissions', 'Contact'];
 
 const programs = [
   { label: 'Playgroup', href: '/programs#playgroup' },
@@ -53,14 +53,6 @@ const programs = [
   { label: 'Kindergarten', href: '/programs#kg' },
   { label: 'Primary School', href: '/programs#primary' },
   { label: 'After School Care', href: '/programs' },
-];
-
-const support = [
-  { label: 'FAQs', href: '#' },
-  { label: 'Parent Login', href: '/admissions' },
-  { label: 'Admission Process', href: '/admissions' },
-  { label: 'Careers', href: '#' },
-  { label: 'Privacy Policy', href: '#' },
 ];
 
 const socials = [
@@ -72,7 +64,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-navy relative overflow-hidden">
+    <footer id='Footer' className="bg-dark-navy relative overflow-hidden">
       {/* Decorative blur */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-edu-yellow/5 rounded-full blur-3xl pointer-events-none" />
