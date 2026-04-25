@@ -251,11 +251,11 @@ export default function HeroSection() {
             {!prefersReducedMotion && (
               <>
                 <motion.span
-                  aria-hidden="true"
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                  className="absolute top-5 right-24 sm:right-32 lg:right-36 text-amber-400 text-lg sm:text-xl lg:text-2xl select-none pointer-events-none"
-                  style={{ willChange: 'transform' }}
+                aria-hidden="true"
+                animate={{ rotate: 360 }}
+                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+                className="absolute top-5 right-24 sm:right-32 lg:right-36 text-amber-400 text-lg sm:text-xl lg:text-2xl select-none pointer-events-none"
+                style={{ willChange: 'transform' }}
                 >
                   ✦
                 </motion.span>

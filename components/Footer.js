@@ -45,7 +45,7 @@ export const GraduationCap = (props) => (
     <path d="M6 12v5c3 3 9 3 12 0v-5" />
   </svg>
 );
-const quickLinks = ['About Us', 'Programs', 'Admissions', 'Contact'];
+const quickLinks = ['About', 'Programs', 'Admissions', 'Contact'];
 
 const programs = [
   { label: 'Playgroup', href: '/programs#playgroup' },

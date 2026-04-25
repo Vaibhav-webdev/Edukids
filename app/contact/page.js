@@ -129,7 +129,7 @@ export default function ContactPage() {
     }`;
 
   return (
-    <div className="bg-transparent overflow-x-hidden">
+    <div className="pt-10 bg-transparent overflow-x-hidden">
 
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="relative py-20 bg-[linear-gradient(135deg,#F0EEFF_0%,#FFF9E6_50%,#F0EEFF_100%)] overflow-hidden">
