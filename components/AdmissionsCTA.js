@@ -99,13 +99,19 @@ export default function AdmissionsCTA() {
 
           {/* ── Right: Kids Illustration ── */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className=""
+            initial={{ opacity: 0, y: 28 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+            className="relative z-10 w-[85vw] sm:w-[65vw] lg:w-[35vw] max-w-[720px]"
           >
-            <Image src={'/Img6.png'} alt={"Boys-Image"} className='w-60 h-60' width={500} height={400} />
+            <Image
+              src="/Img6.png"
+              alt="Happy kids learning and exploring"
+              width={700}
+              height={600}
+              priority
+              className="w-full h-auto drop-shadow-2xl"
+            />
           </motion.div>
         </div>
       </div>

@@ -66,13 +66,13 @@ export default function WhyChooseUs() {
             <motion.div
               whileHover={{ scale: 1.05, rotate: 2 }}
               transition={{ type: 'spring', stiffness: 200 }}
-              className="relative z-10 w-94 h-100 shadow-2xl"
+              className="relative z-10 w-94 lg:shadow-2xl"
             >
               <Image
                 src="/Img2.png"
                 alt="Kids-Girl"
-                fill
-                sizes="(max-width: 740px) 100vw, 500px"
+                width={400}
+                height={500}
                 className="object-cover mt-4"
               />
             </motion.div>
